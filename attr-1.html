@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고급 선택자 _ 속성선택자</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul,
+    li {
+      list-style: none;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    a[href] {
+      /* background-color: blueviolet; */
+      color: rgb(3, 3, 3);
+           
+              
+    }
+    ul {
+      width: 600px;
+      display: flex;
+      background-color: aqua;
+      padding: 10px;
+      text-align: center;
+     gap: 10px;
+
+    
+    }
+    ul > li {
+      width: calc(100% / 5);
+      background-color: aliceblue;
+
+    }
+  </style>
+  <body>
+    <ul>
+      <li><a>메인 메뉴:</a></li>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#">메뉴3</a></li>
+      <li><a href="#">메뉴4</a></li>
+    </ul>
+  </body>
+</html>
